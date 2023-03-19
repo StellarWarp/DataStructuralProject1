@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>template_function</Title>
+			<Shortcut>TF</Shortcut>
+			<Description>C模板函数</Description>
+			<Author>Estelle</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>function</Default>
+					<ToolTip>函数名</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>rett</ID>
+					<Default>void</Default>
+					<ToolTip>返回类型</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>param</ID>
+					<Default>param</Default>
+					<ToolTip>参数</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>param_real</ID>
+					<Default>param_real</Default>
+					<ToolTip>实参</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>compile</ID>
+					<Default>compile</Default>
+					<ToolTip>函数名</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="c">
+				<![CDATA[#define Template $name$
+				$rett$ _template_($param$)
+				{
+					$selected$ $end$
+				}
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

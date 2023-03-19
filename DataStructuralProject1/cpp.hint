@@ -1,0 +1,31 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define _type_
+#define _template_ combine3(TEMPLATE,_,_type_)
+
+#define Array(T) _TypedVar_(Array, T)
+
+#define ArrayInit(T, init_capacity) _TypedVar_(ArrayInit, T)(init_capacity)
+#define ArrayRelease(T, A) _TypedVar_(ArrayRelease, T)(&A)
+#define ArrayPushBack(T, A, val) _TypedVar_(ArrayPushBack, T)(&A, val)
+#define ArrayPopBack(T, A) _TypedVar_(ArrayPopBack, T)(&A)
+#define ArrayClear(T, A) _TypedVar_(ArrayClear, T)(&A)
+#define ArrayResize(T, A, new_size) _TypedVar_(ArrayResize, T)(&A, new_size)
+#define ArraySize(T, A) _TypedVar_(ArraySize, T)(&A)
+#define ArrayEmpty(T, A) _TypedVar_(ArrayEmpty, T)(&A)
+#define ArrayForEach(T, A, func) _TypedVar_(ArrayForEach, T)(&A, func)
+#define ArrayGet(T, A, index) _TypedVar_(ArrayGet, T)(&A, index)
+
+#define LoopArray(T) _TypedVar_(LoopArray, T)
+
+#define LoopArrayInit(T, init_capacity) _TypedVar_(LoopArrayInit, T)(init_capacity)
+#define LoopArrayRelease(T, LA) _TypedVar_(LoopArrayRelease, T)(&LA)
+#define LoopArrayPushBack(T, LA, val) _TypedVar_(LoopArrayPushBack, T)(&LA, val)
+#define LoopArrayPopBack(T, LA) _TypedVar_(LoopArrayPopBack, T)(&LA)
+#define LoopArrayPushFront(T, LA, val) _TypedVar_(LoopArrayPushFront, T)(&LA, val)
+#define LoopArrayPopFront(T, LA) _TypedVar_(LoopArrayPopFront, T)(&LA)
+#define LoopArrayFront(T, LA) _TypedVar_(LoopArrayFront, T)(&LA)
+#define LoopArrayBack(T, LA) _TypedVar_(LoopArrayBack, T)(&LA)
+#define LoopArrayGet(T, LA, index) _TypedVar_(LoopArrayGet, T)(&LA, index)
+#define Foreach(iter, container, containerType, dataType) for(dataType* iter = containerType##Begin(dataType,container);iter != containerType##End(dataType,container); iter = containerType##Forward(dataType,container, iter))

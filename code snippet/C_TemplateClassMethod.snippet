@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>template_class_method</Title>
+			<Shortcut>TCM</Shortcut>
+			<Description>C类模板方法</Description>
+			<Author>Estelle</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>function</Default>
+					<ToolTip>函数名</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>rett</ID>
+					<Default>void</Default>
+					<ToolTip>返回类型</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>param</ID>
+					<Default>param</Default>
+					<ToolTip>参数</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>param_real</ID>
+					<Default>param_real</Default>
+					<ToolTip>实参</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>compile</ID>
+					<Default>compile</Default>
+					<ToolTip>函数名</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="c">
+				<![CDATA[#define Template $name$
+				#define $name$(T, $param_real$) _TypedVar_($name$, T)(this, $param_real$)
+				$rett$ _template_(self, $param$);
+				#ifdef $compile$_CF
+				$rett$ _template_(self, $param$)
+				{
+					$selected$ $end$
+				}
+				#endif]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
+

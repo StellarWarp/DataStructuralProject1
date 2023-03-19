@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{9455edba-138d-4ca6-b8e4-a9a5ade4ddd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container">
+      <UniqueIdentifier>{34846368-4391-4e9e-b548-1df1eb8157ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{248db70a-024d-4927-baa0-cf1f6227b1ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container\Template">
+      <UniqueIdentifier>{839e4ac8-d410-44ec-bef6-af8e846e17f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container\Specify">
+      <UniqueIdentifier>{e3c7c788-acb3-4448-b3d6-565cff5a601e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{f86dbfe5-a779-4678-8bdd-da3e5fb7f6b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\UserInterface">
+      <UniqueIdentifier>{dbd4911d-ca0d-46bb-8398-196b01a3607f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bank">
+      <UniqueIdentifier>{8360de42-84f5-4b8a-abcf-82e0226500f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bank\Function">
+      <UniqueIdentifier>{6da55d56-df96-4ecf-b8d7-f872bf0d80d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Bank\Sim">
+      <UniqueIdentifier>{d8b23e36-9bd5-4403-8feb-5c103dcbfbd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container\Non">
+      <UniqueIdentifier>{58f0f34a-5241-4523-ab67-62ce12a151c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{f95f1a0a-02d3-42d7-99d0-148c52ac5de8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Compare.c">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.c">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Pair.c">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.c">
+      <Filter>Container\Specify</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="OutPutBuffer.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.c">
+      <Filter>IO\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoPtr.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.c">
+      <Filter>Container\Specify</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexTree.c">
+      <Filter>Container\Non</Filter>
+    </ClCompile>
+    <ClCompile Include="String.c">
+      <Filter>Container\Non</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocator.c">
+      <Filter>Other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Compare.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CompareTemplate.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Coroutine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityTemplate.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Pair.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="PairTemplate.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="TypedDefineEnd.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TypedDefineBegin.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityCore.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayTemplate.h">
+      <Filter>Container\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayCore.h">
+      <Filter>Container\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Container\Specify</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="OutPutBuffer.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>IO\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPtr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListTemplate.h">
+      <Filter>Container\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListCore.h">
+      <Filter>Container\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Container\Specify</Filter>
+    </ClInclude>
+    <ClInclude Include="BankFunction.h">
+      <Filter>源文件\Bank\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="BankDataBase.h">
+      <Filter>源文件\Bank\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Display.h">
+      <Filter>源文件\Bank\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>源文件\Bank\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamsInput.h">
+      <Filter>源文件\Bank\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="BankExtend.h">
+      <Filter>源文件\Bank\Sim</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics.h">
+      <Filter>源文件\Bank\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexTree.h">
+      <Filter>Container\Non</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Container\Non</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
