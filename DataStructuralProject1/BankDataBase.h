@@ -37,5 +37,5 @@ void ClientPrint(WCHAR* buffer, size_t buffer_size, Client* client)
 
 void DataBasePrint(IndexTree* DataBase)
 {
-	IndexTreePrint(DataBase, ClientPrint);
+	IndexTreePrint(DataBase, (void(*)(WCHAR*,size_t,size_t))ClientPrint);
 }
